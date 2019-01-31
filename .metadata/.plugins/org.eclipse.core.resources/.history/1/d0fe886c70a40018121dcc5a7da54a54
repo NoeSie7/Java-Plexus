@@ -1,0 +1,75 @@
+package es.plexus.cedei.tresenraya.tresraya;
+
+import java.util.Scanner;
+
+public class Main {
+	
+	static Tablero tab = new Tablero();
+	static Ficha fich = new Ficha();
+	static int opc = 0;
+	static Boolean jugador = false;
+	static Scanner reader = new Scanner(System.in);
+	
+	public static void main(String[] args) {
+		
+		
+			while (opc<2) {
+			
+		 	
+		 	System.out.println("1) Jugar 3 en rayas");
+		 	System.out.println("2) Salir");
+		 	
+		 	
+		 	
+		 
+			opc = reader.nextInt();
+							
+				switch (opc) {
+				
+				case 1:
+					System.out.println("Ha escogido Jugar");
+						jugar();
+					break;
+				
+					
+				default: System.out.println("Ha salido del programa");
+					break;
+				}
+		   }
+	}
+	
+	public static void jugar() {
+		
+		Integer x,y;
+		int jugadas = 0;
+		System.out.println("Bienvenido");
+		while(jugadas < 9) {
+				if(jugador == false) {
+					int jug = 1;
+					System.out.println("Jugador"+jug+":");
+					tab.mostrar();
+					System.out.println("Introduzca coordenada x");
+					x = reader.nextInt();
+					System.out.println("Introduzca coordenada y");
+					y = reader.nextInt();
+					String valor = "x";
+					tab.setPos(x, y, valor);
+					jugadas++;
+					jugador = true;
+				}else {
+					int jug = 2;
+					System.out.println("Jugador"+jug+":");
+					tab.mostrar();
+					System.out.println("Introduzca coordenada x");
+					x = reader.nextInt();
+					System.out.println("Introduzca coordenada y");
+					y = reader.nextInt();
+					String valor = "o";
+					tab.setPos(x, y, valor);
+					jugadas++;
+					jugador = false;
+				}
+		}
+	}
+	
+}

@@ -1,0 +1,50 @@
+package es.plexus.cedei.tresenraya.tresraya;
+
+import java.util.Scanner;
+
+public class Main {
+	
+	static Tablero tab = new Tablero();
+	static int opc = 0;
+	static Boolean jugador = false;
+	
+	public static void main(String[] args) {
+		
+		
+			while (opc<2) {
+			
+		 	Scanner reader = new Scanner(System.in);
+		 	System.out.println("1) Jugar 3 en rayas");
+		 	System.out.println("2) Salir");
+		 	
+		 	
+		 	
+		 
+			opc = reader.nextInt();
+							
+				switch (opc) {
+				
+				case 1:
+					System.out.println("Ha escogido Jugar");
+						jugar();
+					break;
+				
+					
+				default: System.out.println("Ha salido del programa");
+					break;
+				}
+		   }
+	}
+	
+	public static void jugar() {
+		int i = 1;
+		if(jugador == false) {
+			System.out.println("Bienvenido jugador"+i+":");
+			tab.mostrar();
+			
+			
+		}
+		
+	}
+	
+}

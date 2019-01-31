@@ -1,0 +1,42 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>es.plexus.cedei</groupId>
+  <artifactId>patdis.granjuego</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>GranJuego</name>
+  <description>Juego de turnos para introducción a Patrones de Diseño</description>
+  
+  <dependencies>
+	<dependency>
+		<groupId>es.plexus.cedei</groupId>
+		<artifactId>patdis.formateador</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</dependency>
+  </dependencies>
+  
+  <profile>
+      <id>sonar</id>
+      <activation>
+          <activeByDefault>true</activeByDefault>
+      </activation>
+      <properties>
+          <sonar.host.url>
+            http://localhost:9000
+          </sonar.host.url>
+          <sonar.login>admin</sonar.login>
+          <sonar.password>admin</sonar.password>
+      </properties>
+    </profile>
+  
+  <build>
+     <plugins>
+         <plugin>
+             <groupId>org.sonarsource.scanner.maven</groupId>
+             <artifactId>sonar-maven-plugin</artifactId>
+             <version>3.3.0.603</version>
+         </plugin>
+     </plugins>
+ </build>
+
+  
+</project>

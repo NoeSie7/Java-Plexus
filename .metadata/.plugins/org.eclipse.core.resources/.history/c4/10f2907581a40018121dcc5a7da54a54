@@ -1,0 +1,82 @@
+package es.plexus.cedei.tresenraya.tresraya;
+
+public class Tablero {
+		private String [][] tablero = new String[3][3];
+		private Boolean ganador;
+		
+		public Tablero() {
+			
+			this.ganador = false;
+			for(int i = 0; i < tablero.length; ++i) {
+				for(int j = 0 ; j < tablero.length; ++j) {
+					this.tablero[i][j] = "-";
+				}
+			}
+			
+		}
+
+		public String[][] getTablero() {
+			return tablero;
+		}
+
+		public void setTablero(String[][] tablero) {
+			this.tablero = tablero;
+		}
+		
+		public void setPos(Integer x, Integer y, String valor) {
+			this.tablero[x][y] = valor;
+		}
+
+		public String getValue(int x, int y) {
+			return tablero[x][y];
+		}
+		
+		public Boolean rango(Integer x, Integer y) {
+			Boolean pepe = false;
+			if((x < 3)||(x >= 0 ) && (y < 3)||(y >= 0)) {
+				pepe = true;
+			}
+			
+			return pepe;
+		}
+		public void mostrar() {
+			int aux = 0;
+			for(int i = 0; i < tablero.length; ++i) {
+				System.out.print(i+"\t");
+				for(int j = 0 ; j < tablero.length; ++j) {
+					System.out.print(tablero[i][j]+"\t");
+					
+				}
+			
+				System.out.print("\n");
+			}
+		}
+		
+		public void comprobar_ganador(String tipo) {
+			for(int i = 0; i < tablero.length; ++i) {
+				for(int j = 0 ; j < tablero.length; ++j) {
+					
+					
+					if((i == j ) && (getValue(i, j).equals(tipo))) {
+						System.out.println("Ganador jugador "+ tipo);
+					}else if((getValue(i, j).equals(tipo)) && (i == 0)) {
+						System.out.println("Ganador jugador "+ tipo);
+					}else if((getValue(i, j).equals(tipo)) && (i == 1)) {
+						System.out.println("Ganador jugador " + tipo);
+					}else if((getValue(i, j).equals(tipo)) && (i == 2)) {
+						System.out.println("Ganador jugador " + tipo);
+					}else if((getValue(i, j).equals(tipo)) && (j == 0)) {
+						System.out.println("Ganador jugador " + tipo);
+					}else if((getValue(i, j).equals(tipo)) && (j == 1)) {
+						System.out.println("Ganador jugador "+ tipo);
+					}else if((getValue(i, j).equals(tipo)) && (j == 2)) {
+						System.out.println("Ganador jugador "+ tipo);
+					}else if(i+j == tablero.length-1) {
+						System.out.println("Ganador jugador "+ tipo);
+					}
+				}
+				
+			}
+
+		}
+}		

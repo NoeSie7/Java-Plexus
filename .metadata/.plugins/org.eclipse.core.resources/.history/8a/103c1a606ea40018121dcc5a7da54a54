@@ -1,0 +1,19 @@
+package es.plexus.cedei.tresenraya.tresraya;
+
+public class Fichas {
+	
+	private String valor;
+	
+	public Fichas() {
+		this.valor = null;
+	}
+
+	public String getValor() {
+		return valor;
+	}
+
+	public void setValor(String valor) {
+		this.valor = valor;
+	}
+
+}

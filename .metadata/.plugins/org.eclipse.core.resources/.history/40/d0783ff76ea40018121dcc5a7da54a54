@@ -1,0 +1,30 @@
+package es.plexus.cedei.tresenraya.tresraya;
+
+public class Fichas {
+	
+	private String valor;
+	private Boolean jugador;
+	
+	public Fichas() {
+		this.valor = null;
+		this.jugador = null;
+	}
+	
+	public Fichas(String valor, Boolean jug) {
+		this.valor = valor;
+		this.jugador = jug;
+	}
+	
+	public void turno() {
+		
+	}
+	
+	public String getValor() {
+		return valor;
+	}
+
+	public void setValor(String valor) {
+		this.valor = valor;
+	}
+
+}

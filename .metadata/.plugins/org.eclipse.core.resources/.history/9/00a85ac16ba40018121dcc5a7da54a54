@@ -1,0 +1,18 @@
+package es.plexus.cedei.tresenraya.tresraya;
+
+public class Main {
+	
+	Tablero tab = new Tablero();
+	int opc = 0;
+	
+	public static void main(String[] args) {
+		
+		tab.mostrar();
+		
+		while() {
+			
+		}
+		
+		
+	}
+}

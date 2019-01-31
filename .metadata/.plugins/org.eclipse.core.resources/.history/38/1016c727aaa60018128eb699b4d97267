@@ -1,0 +1,11 @@
+# unique project identifier (required)
+sonar.projectKey=es.plexus.cedei
+
+# project metadata (used to be required, optional since SonarQube 6.1)
+sonar.projectName=patdis.granjuego
+sonar.projectVersion=0.0.1
+
+# path to source directories (required)
+sonar.sources=src
+
+sonar.java.binaries=target/classes

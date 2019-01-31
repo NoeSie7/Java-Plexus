@@ -1,0 +1,37 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>es.cedei.plexus</groupId>
+	<artifactId>ejemplonexus</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+
+
+	<name>ejemplonexus</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<repositories>
+		<repository>
+		<id>172.20.209.77</id>
+		<url>http://172.20.209.77:8081/repository/maven-public/</url>
+		</repository>
+	</repositories>
+
+	<dependencies>
+		<dependency>
+			<groupId>es.cedei.plexus</groupId>
+			<artifactId>dependenciasuma</artifactId>
+			<version>0.0.1</version>
+
+		</dependency>
+
+
+	</dependencies>
+
+
+</project>

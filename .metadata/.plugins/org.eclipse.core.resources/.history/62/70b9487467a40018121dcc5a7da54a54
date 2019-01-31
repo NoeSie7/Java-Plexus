@@ -1,0 +1,5 @@
+package es.plexus.cedei.tresenraya.tresraya;
+
+public class Tablero {
+		private Integer [][] tablero = new Integer[3][3];
+}

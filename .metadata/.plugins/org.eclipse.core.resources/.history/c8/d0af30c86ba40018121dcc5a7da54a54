@@ -1,0 +1,47 @@
+package es.plexus.cedei.tresenraya.tresraya;
+
+import java.util.Scanner;
+
+public class Main {
+	
+	Tablero tab = new Tablero();
+	static int opc = 0;
+	
+	public static void main(String[] args) {
+		
+		tab.mostrar();
+		
+while (opc<7) {
+			
+		 	Scanner reader = new Scanner(System.in);
+		 	System.out.println("1) Vuelos que se puede hacer trasbordo");
+		 	System.out.println("2) Hora que mas persona habra en la terminal");
+		 	System.out.println("3) Listado de vuelos de llegada");
+		 	System.out.println("4) Listado de vuelos de salida");
+		 	System.out.println("5) Mostrar panel");
+		 	System.out.println("6) A�adir vuelos");
+		 	
+		 	
+		 
+			opc = reader.nextInt();
+							
+			switch (opc) {
+			
+			case 1:
+				System.out.println("Ha escogido vuelos con trasbordo");
+					trasbordo();
+				break;
+			case 2:
+				System.out.println("Ha escogido hora que habra mas personas en la terminal");
+					hora_mas();
+				break;
+			
+				
+			default: System.out.println("Ha salido del programa");
+				break;
+			}
+		 }
+		
+		
+	}
+}

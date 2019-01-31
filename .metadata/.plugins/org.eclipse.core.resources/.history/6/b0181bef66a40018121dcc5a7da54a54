@@ -1,0 +1,13 @@
+package es.plexus.cedei.tresenraya.tresraya;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+        System.out.println( "Hello World!" );
+    }
+}

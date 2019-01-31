@@ -1,0 +1,19 @@
+package es.plexus.cedei.tresenraya.tresraya;
+
+public class Tablero {
+		private Integer [][] tablero = new Integer[3][3];
+		private Integer x;
+		private Integer y;
+		
+		public Tablero() {
+			
+		}
+
+		public Integer[][] getTablero() {
+			return tablero;
+		}
+
+		public void setTablero(Integer[][] tablero) {
+			this.tablero = tablero;
+		}
+}

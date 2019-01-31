@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;tdd-mocking&apos;" deleteContents="true" description="Delete resource &apos;tdd-mocking&apos;" element1="/tdd-mocking" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1536145846339"/>
+</session>

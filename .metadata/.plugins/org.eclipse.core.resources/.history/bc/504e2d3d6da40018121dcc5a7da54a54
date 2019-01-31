@@ -1,0 +1,51 @@
+package es.plexus.cedei.tresenraya.tresraya;
+
+public class Tablero {
+		private String [][] tablero = new String[3][3];
+		private Integer x;
+		private Integer y;
+		private Integer[] position;
+		
+		public Tablero() {
+			for(int i = 0; i < tablero.length; ++i) {
+				for(int j = 0 ; j < tablero.length; ++j) {
+					this.tablero[i][j] = "-";
+				}
+			}
+			
+		}
+
+		public String[][] getTablero() {
+			return tablero;
+		}
+
+		public void setTablero(String[][] tablero) {
+			this.tablero = tablero;
+		}
+		
+		public void setPos(Integer x, Integer y, String valor) {
+			this.tablero[x][y] = valor;
+		}
+		
+//		public Integer[] getPos() {
+//			
+//			return ;
+//		}
+		
+		public Boolean rango(Integer x, Integer y) {
+			Boolean pepe = false;
+			if((x < 3)||(x >= 0 ) && (y < 3)||(y >= 0)) {
+				pepe = true;
+			}
+			
+			return pepe;
+		}
+		public void mostrar() {
+			for(int i = 0; i < tablero.length; ++i) {
+				for(int j = 0 ; j < tablero.length; ++j) {
+					System.out.print(tablero[i][j]+"\t");
+				}
+				System.out.print("\n");
+			}
+		}
+}

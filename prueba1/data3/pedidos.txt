@@ -1,0 +1,6 @@
+1234567G;Luis;Ramirez;32;Valencia;Barcelona;Juan;Calle Rita la cantadora;2;true;0;21-11-18;12:50;false
+7981011P;Pepe;Lucho;28;Valencia;Barcelona;Pepe;Calle Rita la cantadora;3;false;1;21-11-18;12:50;true
+9876543S;Juanjo;Gonzalez;21;Valencia;Barcelona;Luis;Calle Rita la cantadora;4;true;1;25-11-18;12:50;true
+5432678Z;Rita;Hernandez;54;Tenerife;Granada;Pepe;Calle Rita la cantadora;5;true;2;12-11-18;12:50;true
+1245780X;Jeffren;Gonzalez;67;Tenerife;Lanzarote;Luis;Calle Rita la cantadora;1;true;0;12-11-18;12:50;false
+9865321M;Nanote;Abreu;35;Tenerife;Reino Unido;Juan;Calle Rita la cantadora;2;true;3;15-09-18;12:50;true
